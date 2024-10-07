@@ -1,74 +1,84 @@
-/* Remove duplicate @font-face rules */
+:root {
+  --primary-color: #4682b4;
+  --secondary-color: #333;
+  --background-color: #eee;
+  --font-family: Circular, sans-serif;
+  --font-size: 16px;
+  --border-color: rgba(0, 0, 0, 0.2);
+  --box-shadow-color: #808080;
+}
+
 @font-face {
-    font-family: Circular;
-    src: url('path/to/Circular.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: Circular;
-    src: url('path/to/Circular-Bold.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  nav {
-    background-color: #4682b4;
-    padding: 10px;
-  }
-  
-  nav a {
-    color: #ffffff;
-    display: block;
-    padding: 20px;
-  }
-  
-  h1 {
-    color: #4682b4;
-  }
-  
-  img {
-    width: 150px;
-    height: auto;
-    border: 1px solid #4682b4;
-    padding: 2px;
-    box-shadow: 0 0 30px #808080;
-  }
-  
-  p {
-    padding: 0;
-    color: #333; /* added color for legibility */
-  }
-  
-  main {
-    max-width: 840px;
-  }
-  
-  aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
-  }
-  
-  aside img {
-    width: 200px;
-    height: auto;
-  }
-  
-  main img {
-    width: 150px;
-    height: auto;
-  }
-  
-  footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
-    color: #333; /* added color for legibility */
-  }
-  
+  font-family: Circular;
+  src: url('path/to/Circular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Circular;
+  src: url('path/to/Circular-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+nav {
+  background-color: var(--primary-color);
+  padding: 10px;
+}
+
+nav a {
+  color: #ffffff;
+  display: block;
+  padding: 20px;
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+img {
+  width: 150px;
+  height: auto;
+  border: 1px solid var(--primary-color);
+  padding: 2px;
+  box-shadow: 0 0 30px var(--box-shadow-color);
+}
+
+p {
+  padding: 0;
+  color: var(--secondary-color);
+}
+
+main {
+  max-width: 840px;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+}
+
+aside {
+  width: 20rem;
+  margin: 1rem;
+  border: 1px solid var(--border-color);
+  padding: 1rem;
+  background-color: var(--background-color);
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+aside img {
+  width: 200px;
+  height: auto;
+}
+
+main img {
+  width: 150px;
+  height: auto;
+}
+
+footer {
+  margin-top: 15px;
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+  color: var(--secondary-color);
+}
