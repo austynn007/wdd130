@@ -1,59 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Ugochukwu Onunkwo, Jane Onunkwo">
-    <meta name="description" content="Rapid Currents Rafting is your destination for unforgettable whitewater rafting adventures. Join us to explore nature's beauty while enjoying thrilling, safe, and sustainable rafting experiences.">
-    <title>About Us | Rapid Currents Rafting</title>
+    <meta charset="UTF-8"> <!-- Specifies the character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures the page is responsive on different devices -->
+    <meta name="author" content="Ugochukwu Onunkwo, Jane Onunkwo"> <!-- Specifies the author(s) of the page -->
+    <meta name="description" content="Rapid Currents Rafting is your destination for unforgettable whitewater rafting adventures. Join us to explore nature's beauty while enjoying thrilling, safe, and sustainable rafting experiences."> <!-- Provides a description for search engines -->
+    <title>About Us | Rapid Currents Rafting</title> <!-- Title of the page, appears in browser tab -->
+
     <!-- Google Font API reference -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-  
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Optimizes loading of Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Ensures proper loading across different domains -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> <!-- Loads the Roboto font family from Google Fonts -->
+
     <!-- Local Stylesheet -->
-    <link rel="stylesheet" href="styles/rafting.css">
+    <link rel="stylesheet" href="styles/rafting.css"> <!-- Links to the local CSS file for styling -->
 </head>
 <body>
+    <!-- Header section with logo and navigation -->
     <header class="header-grid">
-            <div class="logo">
-                <img src="images/rapid-currents-logo.png" alt="Rapid Currents Logo">
-            </div>
-            <nav class="nav-flex">
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" class="active">About</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-              </ul>
-            </nav>
+        <div class="logo">
+            <img src="images/rapid-currents-logo.png" alt="Rapid Currents Logo"> <!-- Logo image for the site -->
+        </div>
+        <nav class="nav-flex"> <!-- Navigation bar -->
+            <ul>
+                <li><a href="index.html">Home</a></li> <!-- Link to the homepage -->
+                <li><a href="about.html" class="active">About</a></li> <!-- Link to the About page (currently active) -->
+                <li><a href="trips.html">Trips</a></li> <!-- Link to the Trips page -->
+                <li><a href="contact.html">Contact Us</a></li> <!-- Link to the Contact Us page -->
+            </ul>
+        </nav>
     </header>
+
+    <!-- Main content section -->
     <main>
         <div class="hero">
-            <img src="images/rafting-hero.jpg" alt="Rapid Currents Rafting Hero Image" class="hero-image">
-            <h1>Rapid Currents Rafting</h1>
+            <img src="images/rafting-hero.jpg" alt="Rapid Currents Rafting Hero Image" class="hero-image"> <!-- Hero image at the top of the main content -->
+            <h1>Rapid Currents Rafting</h1> <!-- Main title for the page -->
         </div>
+
+        <!-- About section with an image and description -->
         <article>
-            <h2>About Us</h2>
-            <img src="images/happy-client.jpg" alt="Happy Client" class="client-image">
+            <h2>About Us</h2> <!-- Section heading -->
+            <img src="images/happy-client.jpg" alt="Happy Client" class="client-image"> <!-- Image of a client to enhance the content -->
             <p>Rapid Currents Rafting is dedicated to providing unforgettable whitewater experiences, fostering a 
               culture of adventure, safety, and community. Our mission is to empower individuals to connect with 
-              nature and push beyond their limits.</p>
-          </article>
-          
+              nature and push beyond their limits.</p> <!-- Paragraph describing the company's mission -->
+        </article>
+
+        <!-- History section providing background information -->
         <section class="history">
-            <h2>History</h2>
+            <h2>History</h2> <!-- Section heading for history -->
             <p>Rapid Currents Rafting was founded in 2024 by adventure enthusiasts Ugochukwu Onunkwo and Jane Onunkwo. 
               With a shared passion for whitewater rafting, they set out to create a company that would provide 
               unparalleled experiences on the world's most breathtaking rivers. From humble beginnings to international 
-              recognition, Rapid Currents has remained committed to safety, sustainability, and community engagement.</p>
+              recognition, Rapid Currents has remained committed to safety, sustainability, and community engagement.</p> <!-- Detailed history of the company -->
         </section>
+
+        <!-- Adventure section with a grid layout of images and captions -->
         <section class="adventures">
-            <h2>Adventure Awaits You!</h2>
+            <h2>Adventure Awaits You!</h2> <!-- Section heading encouraging visitors -->
             <div class="adventures-grid">
                 <figure>
-                    <img src="images/rafting1.jpg" alt="Whitewater Rafting">
-                    <figcaption>Los Dientes del Diablo</figcaption>
+                    <img src="images/rafting1.jpg" alt="Whitewater Rafting"> <!-- Image representing an adventure location -->
+                    <figcaption>Los Dientes del Diablo</figcaption> <!-- Caption for the image -->
                 </figure>
                 <figure>
                     <img src="images/rafting2.jpg" alt="River Rapids">
@@ -65,26 +74,28 @@
                 </figure>
                 <figure>
                     <img src="images/rafting4.jpg" alt="Scenic River View">
-                    <figcaption>River Rapids</figcaption>
+                    <figcaption>Canyon Expedition</figcaption>
                 </figure>
                 <figure>
                     <img src="images/rafting5.jpg" alt="Exciting Whitewater">
-                    <figcaption>Canyon Expedition</figcaption>
+                    <figcaption>River Rapids</figcaption>
                 </figure>
-            </div>
+            </div> <!-- Grid layout of images, using CSS to manage spacing and alignment -->
         </section>
     </main>
+
+    <!-- Footer with social media links and copyright information -->
     <footer>
-        <p class="footer-text">© 2024 ⚓ Rapid Currents Rafting ⚓ Ugochukwu Onunkwo</p>
+        <p class="footer-text">© 2024 ⚓ Rapid Currents Rafting ⚓ Ugochukwu Onunkwo</p> <!-- Copyright text -->
         <nav class="sociallinks">
             <a href="https://facebook.com">
-                <img src="images/facebook-logo.png" alt="Facebook">
+                <img src="images/facebook-logo.png" alt="Facebook"> <!-- Link to Facebook -->
             </a>
             <a href="https://instagram.com">
-                <img src="images/instagram-logo.png" alt="Instagram">
+                <img src="images/instagram-logo.png" alt="Instagram"> <!-- Link to Instagram -->
             </a>
             <a href="x.com">
-                <img src="images/x-logo.png" alt="Twitter">
+                <img src="images/x-logo.png" alt="X"> <!-- Link to X -->
             </a>
         </nav>
     </footer>

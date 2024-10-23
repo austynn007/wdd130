@@ -1,97 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Rapid Currents Rafting</title>
-    <meta name="description" content="Contact Rapid Currents Rafting for general inquiries, reservation questions, or website suggestions. We are here to help you plan your next adventure.">
-    <link rel="stylesheet" href="styles/rafting.css">
+    <meta charset="UTF-8"> <!-- Specifies the character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsive design for various devices -->
+    <title>Contact Us | Rapid Currents Rafting</title> <!-- Page title for the browser tab -->
+    <meta name="description" content="Contact Rapid Currents Rafting for general inquiries, reservation questions, or website suggestions. We are here to help you plan your next adventure."> <!-- SEO-friendly description of the page -->
+    <link rel="stylesheet" href="styles/rafting.css"> <!-- Links to the external CSS file for styles -->
 </head>
 <body>
+    <!-- Header -->
     <header>
         <div class="header-grid">
             <div class="logo">
-                <img src="images/rapid-currents-logo.png" alt="Rapid Currents Logo">
+                <img src="images/rapid-currents-logo.png" alt="Rapid Currents Logo"> <!-- Company logo for brand identity -->
             </div>
-            <nav class="nav-flex">
+            <nav class="nav-flex"> <!-- Navigation bar for site links -->
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="trips.html">Trips</a></li>
-                    <li><a href="contact.html" class="active">Contact Us</a></li>
+                    <li><a href="index.html">Home</a></li> <!-- Link to Home page -->
+                    <li><a href="about.html">About</a></li> <!-- Link to About page -->
+                    <li><a href="trips.html">Trips</a></li> <!-- Link to Trips page -->
+                    <li><a href="contact.html" class="active">Contact Us</a></li> <!-- Link to Contact Us page, marked as active -->
                 </ul>
             </nav>
         </div>
     </header>
+
+    <!-- Main Content -->
     <main>
+        <!-- Contact Information Section -->
         <section class="contact-info">
-            <h2>Contact Information</h2>
-            <p>Address: 43 River Road, Adventure City, AC 45678</p>
-            <p>Phone: +162-842-9791</p>
-            <p>Email: info@rapidcurrents.com</p>
-            <p>Operating hours: Mon-Fri: 9 AM - 5 PM</p>
-            <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <h2>Contact Information</h2> <!-- Heading for the contact details -->
+            <p>Address: 43 River Road, Adventure City, AC 45678</p> <!-- Physical address of the company -->
+            <p>Phone: +162-842-9791</p> <!-- Phone number for contact -->
+            <p>Email: info@rapidcurrents.com</p> <!-- Email address for contact -->
+            <p>Operating hours: Mon-Fri: 9 AM - 5 PM</p> <!-- Business hours -->
+            <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> <!-- Embedded Google Map for location -->
         </section>
 
+        <!-- Employee Profiles Section -->
         <section class="employee-profiles">
-            <h2>Meet Our Team</h2>
+            <h2>Meet Our Team</h2> <!-- Heading for the team members section -->
             <figure>
-                <img src="images/river-guides.jpg" alt="Guides">
-                <figcaption>River Guides from left to right - Judy, Lauren, Mark, Cindy, Andrew and Kevin</figcaption>
+                <img src="images/river-guides.jpg" alt="Guides"> <!-- Image of river guides -->
+                <figcaption>River Guides from left to right - Judy, Lauren, Mark, Cindy, Andrew, and Kevin</figcaption> <!-- Caption describing the guides -->
             </figure>
             <figure>
-                <img src="images/victor-leroy.jpg" alt="Victor Leroy">
-                <figcaption>Victor Leroy - Operations Manager</figcaption>
+                <img src="images/victor-leroy.jpg" alt="Victor Leroy"> <!-- Image of Operations Manager -->
+                <figcaption>Victor Leroy - Operations Manager</figcaption> <!-- Caption with manager's name and title -->
             </figure>
             <figure>
-                <img src="images/bob-krein.jpg" alt="Bob Krein">
-                <figcaption>Bob Krein - Safety Specialist</figcaption>
+                <img src="images/bob-krein.jpg" alt="Bob Krein"> <!-- Image of Safety Specialist -->
+                <figcaption>Bob Krein - Safety Specialist</figcaption> <!-- Caption with specialist's name and title -->
             </figure>
         </section>
 
+        <!-- Contact Form Section -->
         <section class="contact-form">
-            <h2>Contact Us</h2>
-            <form action="#" method="post">
+            <h2>Contact Us</h2> <!-- Heading for the contact form -->
+            <form action="#" method="post"> <!-- Form setup for user submissions -->
                 <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" required> <!-- Input for user's name, marked as required -->
                 
                 <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" required> <!-- Input for user's email, marked as required -->
                 
-                <label>Purpose of Message:</label>
+                <label>Purpose of Message:</label> <!-- Label for radio button selection -->
                 <div>
                     <input type="radio" id="general" name="purpose" value="general">
-                    <label for="general">General Inquiry</label>
+                    <label for="general">General Inquiry</label> <!-- Radio option for general inquiries -->
                 </div>
                 <div>
                     <input type="radio" id="reservation" name="purpose" value="reservation">
-                    <label for="reservation">Reservation Question</label>
+                    <label for="reservation">Reservation Question</label> <!-- Radio option for reservation-related questions -->
                 </div>
                 <div>
                     <input type="radio" id="suggestion" name="purpose" value="suggestion">
-                    <label for="suggestion">Website Suggestion</label>
+                    <label for="suggestion">Website Suggestion</label> <!-- Radio option for website suggestions -->
                 </div>
                 
                 <label for="message">Your Message:</label>
-                <textarea id="message" name="message" required></textarea>
+                <textarea id="message" name="message" required></textarea> <!-- Text area for user's message, marked as required -->
                 
                 <div>
                     <input type="checkbox" id="subscribe" name="subscribe">
-                    <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                    <label for="subscribe">Please subscribe me to the monthly newsletter</label> <!-- Checkbox for subscribing to newsletters -->
                 </div>
                 
-                <button type="submit">Send Message</button>
+                <button type="submit">Send Message</button> <!-- Submit button for the form -->
             </form>
         </section>
     </main>
+
+    <!-- Footer -->
     <footer>
-        <p class="footer-text">© 2024 ⚓ Rapid Currents Rafting ⚓ Ugochukwu Onunkwo</p>
-        <nav class="sociallinks">
-            <a href="https://facebook.com"><img src="images/facebook-logo.png" alt="Facebook"></a>
-            <a href="https://instagram.com"><img src="images/instagram-logo.png" alt="Instagram"></a>
-            <a href="https://x.com"><img src="images/x-logo.png" alt="Twitter"></a>
+        <p class="footer-text">© 2024 ⚓ Rapid Currents Rafting ⚓ Ugochukwu Onunkwo</p> <!-- Footer text with copyright information -->
+        <nav class="sociallinks"> <!-- Social media icons for additional engagement -->
+            <a href="https://facebook.com"><img src="images/facebook-logo.png" alt="Facebook"></a> <!-- Facebook link -->
+            <a href="https://instagram.com"><img src="images/instagram-logo.png" alt="Instagram"></a> <!-- Instagram link -->
+            <a href="https://x.com"><img src="images/x-logo.png" alt="Twitter"></a> <!-- Twitter (X) link -->
         </nav>
-        <a href="images/contact-wireframe.png" target="_blank">View Contact Us Wireframe</a>
+        <a href="images/contact-wireframe.png" target="_blank">View Contact Us Wireframe</a> <!-- Link to wireframe image, opens in a new tab -->
     </footer>
 </body>
 </html>
