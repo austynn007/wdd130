@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ugochukwu Onunkwo">
+    <meta name="description" content="Portfolio showcasing the work of Ugochukwu Onunkwo, a passionate web developer from Anambra, Nigeria.">
+    <title>Portfolio | Ugochukwu Onunkwo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header class="header-grid">
+        <nav class="nav-flex">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <img src="images/hero-image.jpg" alt="Web Developer" class="profile">
+            <div class="hero-overlay"></div>
+            <div class="hero-text">
+                <h1>My Portfolio</h1>
+                <p>Showcasing my latest projects and contributions</p>
+            </div>
+        </div>
+
+        <section class="filters">
+            <button class="filter" data-filter="all">All Projects</button>
+            <button class="filter" data-filter="web">Web Apps</button>
+            <button class="filter" data-filter="mobile">Mobile Apps</button>
+            <button class="filter" data-filter="design">Design</button>
+        </section>
+
+        <section class="portfolio-grid">
+            <div class="project-card" data-category="web">
+                <img src="images/wwr-home.jpg" alt="Screenshot of White Water Rafting website homepage, featuring an adventurous rafting photo, navigation menu, and a 'Book Now' button">
+                <h2>White Water Rafting Site Project</h2>
+                <p>A White Water Rafting Website built using HTML, CSS and JavaScript.</p>
+                <div class="tech-stack">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Python</span>
+                    <span>C#</span>
+                    <span>Git</span>
+                </div>
+                <div class="actions">
+                    <a href="https://austynn007.github.io/wdd130/wwr/index.html" target="_blank" class="btn">View Site</a>
+                </div>
+            </div>
+
+            <!-- Add more project cards as needed -->
+
+            <section class="portfolio-grid">
+                <div class="project-card" data-category="web">
+                    <img src="images/git-repo-review.jpg" alt="Screenshot of White Water Rafting website homepage, featuring an adventurous rafting photo, navigation menu, and a 'Book Now' button">
+                    <h2>My Git Repository</h2>
+                    <p>My Git Hub Projects.</p>
+                    <div class="tech-stack">
+                        <span>C#</span>
+                        <span>Python</span>
+                        <span>OOP</span>
+                        <span>Git</span>
+                    </div>
+                    <div class="actions">
+                        <a href="https://github.com/blackchicken-dot/cse210-projects" target="_blank" class="btn">View Git Repository</a>
+                    </div>
+                </div>
+        </section>
+
+        <section class="cta">
+            <h3>Interested in working together?</h3>
+            <a href="contact.html" class="btn">Get in Touch</a>
+        </section>
+    </main>
+
+    <!-- Modal for project details -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+            <div id="modal-tech-stack"></div>
+            <a href="#" id="modal-live-link" class="btn">View Live</a>
+            <a href="#" id="modal-github-link" target="_blank" class="btn">View Code</a>
+        </div>
+    </div>
+
+    <footer>
+        <p class="footer-text">© 2024 Ugochukwu Onunkwo.</p>
+        <p class="footer-text">Disclaimer Privacy Policies Cookies</p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/facebook-logo.png" alt="Facebook">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram-logo.png" alt="Instagram">
+            </a>
+            <a href="x.com">
+                <img src="images/x-logo.png" alt="X">
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>

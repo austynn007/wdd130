@@ -108,6 +108,7 @@ p {
   color: var(--hover-color);
 }
 
+
 /* Hero Styles */
 .hero {
     position: relative;
@@ -318,7 +319,6 @@ body {
 
 /* Header */
 header {
-    background-color: #004b8d;
     padding: 10px 0;
 }
 
@@ -349,7 +349,6 @@ header {
 }
 
 .nav-flex a:hover, .nav-flex a.active {
-    background-color: #003366;
     border-radius: 5px;
 }
 
@@ -553,7 +552,7 @@ header {
 }
 
 .nav-flex a:hover, .nav-flex a.active {
-    background-color: #003366;
+    
     border-radius: 5px;
 }
 

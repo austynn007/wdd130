@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | Ugochukwu Onunkwo</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/main.js" defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</head>
+<body>
+    <header class="header-grid">
+        <nav class="nav-flex">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html" class="active">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-page">
+        <div class="hero">
+            <img src="images/hero-image.jpg" alt="Web Developer" class="profile"> <!-- Hero image at the top of the main content -->
+        </div>
+        <h1>Get in Touch</h1>
+        <div class="contact-content">
+            <div class="contact-form">
+                <form id="contact-form" action="submit-contact.php" method="post">
+                    <div class="form-group">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p><strong>Email:</strong> <a href="mailto:onunkwougochukwu6@gmail.com">onunkwougochukwu6@gmail.com</a></p>
+                <p><strong>Phone:</strong> +234 701 910 2679</p>
+                <p><strong>Address:</strong></p>
+                <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> <!-- Embedded Google Map for location -->
+                <div id="map"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p class="footer-text">© 2024 Ugochukwu Onunkwo.</p>
+        <p class="footer-text">Disclaimer Privacy Policies Cookies</p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/facebook-logo.png" alt="Facebook">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram-logo.png" alt="Instagram">
+            </a>
+            <a href="x.com">
+                <img src="images/x-logo.png" alt="X">
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>
