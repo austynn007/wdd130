@@ -282,7 +282,7 @@
   }
   
   
-  /* Reset some default styles in Portfolio Styles*/
+  /* Portfolio Styles Reset some default styles */
   :root {
     --primary-color: #2C3E50; /* Dark blue-grey, suitable for headers, buttons, or accents */
     --secondary-color: #3498DB; /* A vibrant blue for interactive elements or secondary headers */
